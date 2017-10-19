@@ -8,9 +8,9 @@ El repositorio [vue-gh-pages](https://github.com/cristinafsanz/vue-gh-pages) lo 
 
 Se va a usar el tutorial [GitHub Pages Deployment](https://docs.travis-ci.com/user/deployment/pages/) y la [configuración](https://github.com/jdonsan/pills/blob/master/.travis.yml) del repositorio [Pills](https://github.com/jdonsan/pills) de Jose Dongil.
 
-- Añadir un [token personal de acceso](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) en GitHub, dando permisos de acceso a repositorio por línea de comandos.
+- Añadir un [token personal de acceso](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/), ej TravisCI como descripción (no seleccionar ningún scope).
 
-- Añadir un fichero .travis.yml al repositorio similar al de [Pills](https://github.com/jdonsan/pills/blob/master/.travis.yml) pero usando el comando "npm run build".
+- Añadir un fichero .travis.yml al repositorio similar al de [Pills](https://github.com/jdonsan/pills/blob/master/.travis.yml) pero usando el comando "npm run build" y usando GH_TOKEN como GitHub token.
 
 - Pasar el token de forma segura a Travis a través de la [configuración de repositorios](https://docs.travis-ci.com/user/environment-variables#Defining-Variables-in-Repository-Settings).
 
@@ -18,7 +18,7 @@ Se va a usar el tutorial [GitHub Pages Deployment](https://docs.travis-ci.com/us
 
     - Activar el repositorio: https://travis-ci.org/cristinafsanz/vue-gh-pages-travis.
 
-    - En Settings (rueda a la izquierda del nombre en https://travis-ci.org/profile/cristinafsanz) añadir una nueva variable en Environment Variables (la llamo travis-gh-pages, en .travis.yml es github_token: $travis-gh-pages).
+    - En Settings (rueda a la izquierda del nombre en https://travis-ci.org/profile/cristinafsanz) añadir una nueva variable en Environment Variables (GH_TOKEN y el valor el token generado en GitHub).
 
 - Crear rama gh-pages desde el navegador (selector de ramas y añadir nombre rama).
 
