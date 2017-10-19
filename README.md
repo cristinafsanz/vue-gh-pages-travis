@@ -18,9 +18,11 @@ Se va a usar el tutorial [GitHub Pages Deployment](https://docs.travis-ci.com/us
 
     - Activar el repositorio: https://travis-ci.org/cristinafsanz/vue-gh-pages-travis.
 
-    - En Settings (rueda a la izquierda del nombre en https://travis-ci.org/profile/cristinafsanz) añadir una nueva variable en Environment Variables (la llamo travis-gh-pages).
+    - En Settings (rueda a la izquierda del nombre en https://travis-ci.org/profile/cristinafsanz) añadir una nueva variable en Environment Variables (la llamo travis-gh-pages, en .travis.yml es github_token: $travis-gh-pages).
 
 - Añadir los ficheros del proyecto (con dist en .gitignore) y hacer git add, commit y push para subirlo a remoto y que se genere automáticamente la rama gh-pages.
+
+- Se puede ver el proceso en https://travis-ci.org/cristinafsanz/vue-gh-pages-travis.
 
 - Activar GitHub Pages en gh-pages desde el navegador de GitHub (en Settings).
 
