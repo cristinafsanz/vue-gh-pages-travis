@@ -8,7 +8,7 @@ El repositorio [vue-gh-pages](https://github.com/cristinafsanz/vue-gh-pages) lo 
 
 Se va a usar el tutorial [GitHub Pages Deployment](https://docs.travis-ci.com/user/deployment/pages/) y la [configuración](https://github.com/jdonsan/pills/blob/master/.travis.yml) del repositorio [Pills](https://github.com/jdonsan/pills) de Jose Dongil.
 
-- Añadir un [token personal de acceso](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/), ej TravisCI como descripción (no seleccionar ningún scope).
+- Añadir un [token personal de acceso](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/), ej TravisCI como descripción (seleccionar public_repo).
 
 - Añadir un fichero .travis.yml al repositorio similar al de [Pills](https://github.com/jdonsan/pills/blob/master/.travis.yml) pero usando el comando "npm run build" y usando GH_TOKEN como GitHub token.
 
