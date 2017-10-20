@@ -10,7 +10,7 @@ Se va a usar el tutorial [GitHub Pages Deployment](https://docs.travis-ci.com/us
 
 - Añadir un [token personal de acceso](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/), ej TravisCI como descripción (seleccionar public_repo).
 
-- Añadir un fichero .travis.yml al repositorio similar al de [Pills](https://github.com/jdonsan/pills/blob/master/.travis.yml) pero usando el comando "npm run build" y usando GH_TOKEN como GitHub token.
+- Añadir un fichero .travis.yml al repositorio similar al de [Pills](https://github.com/jdonsan/pills/blob/master/.travis.yml) pero usando el comando "npm run build" y usando $GH_TOKEN como GitHub token (en travis-ci será la misma variable sin $).
 
 - Pasar el token de forma segura a Travis a través de la [configuración de repositorios](https://docs.travis-ci.com/user/environment-variables#Defining-Variables-in-Repository-Settings).
 
